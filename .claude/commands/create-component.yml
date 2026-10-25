@@ -1,0 +1,11 @@
+name: create-component
+description: TypeScript React 컴포넌트를 생성합니다
+aliases:
+  - cc
+args:
+  - name: componentName
+    description: 생성할 컴포넌트 이름 (PascalCase, 예: MyButton)
+    required: true
+steps:
+  - run: node scripts/createComponent.js {{componentName}}
+    description: 컴포넌트 파일 생성 중...
